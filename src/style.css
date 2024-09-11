@@ -32,3 +32,8 @@ canvas {
   max-width: 100%;
   height: auto;
 }
+.info{
+  text-align: center;
+  display: block;
+  padding: 8px;
+}
