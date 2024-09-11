@@ -1,1 +1,12 @@
-zz
+# Logs
+package-lock.json
+
+# Dependency directories
+node_modules/
+
+# environment variables file
+.env
+
+# Parcel related files
+dist/
+.parcel-cache/

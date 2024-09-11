@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <h1>Trip Data Dashboard</h1>
+  <div class="filter">
+    <label for="vendor-filter">Filter by Vendor ID:</label>
+    <select id="vendor-filter">
+      <option value="all">All Vendors</option>
+      <option value="1">Creative Mobile Technologies, LLC</option>
+      <option value="2">VeriFone Inc.</option>
+    </select>
+
+    <div class="slider-container">
+      <label for="hour-slider" class="slider-label">Hour: <span id="hour-value">0</span>:00</label>
+      <input type="range" id="hour-slider" min="0" max="23" value="0" step="1" value="null">
+
+      <label for="all-hours">
+        <input type="checkbox" id="all-hours"> All Hours
+      </label>
+    </div>
+  </div>
+  <div class="chart-container">
+    <canvas id="taxiChart"></canvas>
+  </div>
+
+
+  <script type="module" src="./script.js"></script>
+</body>
+</html>

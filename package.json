@@ -1,0 +1,22 @@
+{
+  "name": "nyc-taxi-trips",
+  "version": "1.0.0",
+  "description": "This small project is a dashboard that fetches trip data from an API and visualizes it using a chart. You can filter the data by `vendorid` and the filter state is saved in the URL (deep linking).",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "parcel": "^2.12.0"
+  },
+  "keywords": [],
+  "author": "Facundo Ezequiel Diaz Cappella",
+  "license": "MIT",
+  "dependencies": {
+    "chart.js": "^4.4.4",
+    "chartjs-adapter-date-fns": "^3.0.0"
+  }
+}
