@@ -98,3 +98,15 @@ input[type="range"]:disabled {
   grid-template-columns: 70% 30%;
   gap: 20px;
 }
+
+
+/*Mobile view*/
+@media screen and (max-width: 600px) {
+  .main-content {
+    display: block;
+  }
+
+  .chart-container {
+    width: auto;
+  }
+}
