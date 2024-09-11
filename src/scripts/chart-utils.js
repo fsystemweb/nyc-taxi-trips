@@ -25,7 +25,7 @@ export function renderChart(data) {
 
   const ctx = document.getElementById('taxiChart').getContext('2d');
   chartInstance = new Chart(ctx, {
-    type: chartType, // Set chart type dynamically
+    type: chartType,
     data: {
       labels: hours,
       datasets: [
