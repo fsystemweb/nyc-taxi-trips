@@ -49,7 +49,7 @@ Explore the intricacies of New York City taxi trips during January 2017 with thi
 ## Production
 This app is deployed with Surge. You can view the live version of the app at the following link:
 
-[Live Demo](https://solid-building.surge.sh/?vendor=all&hour=all)
+[Live Demo](https://mushy-balance.surge.sh/?vendor=all&hour=all)
 
 ## Data Fields and Descriptions
 From : [NYC Taxy & Limousine Commission](https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page)
