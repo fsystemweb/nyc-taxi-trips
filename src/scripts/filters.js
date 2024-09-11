@@ -6,10 +6,7 @@ export function restoreStateFromURL(data) {
   const urlParams = new URLSearchParams(window.location.search);
   const vendorId = urlParams.get('vendor') || 'all';
   const hour = urlParams.get('hour') || 'all';
-
-  console.log("vendorid", vendorId)
-  console.log("hour", hour)
-
+  
   if (vendorId === 'all' && hour === 'all') {
     document.getElementById('all-hours').checked = true;
     document.getElementById('hour-slider').disabled = true;
