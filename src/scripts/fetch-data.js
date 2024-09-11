@@ -1,4 +1,7 @@
-const API_URL = 'https://api.tinybird.co/v0/pipes/yellow_tripdata_2017_pipe.json';
+
+
+const API_URL = process.env.API_URL;
+const BEARER_TOKEN = process.env.TOKEN;
 
 export async function fetchData() {
   try {
@@ -15,7 +18,7 @@ export async function fetchData() {
 
     const response = await fetch(url.toString(), {
       headers: {
-      }
+        Authorization: `Bearer ${BEARER_TOKEN}`      }
     });
 
     const responseJson = await response.json();
