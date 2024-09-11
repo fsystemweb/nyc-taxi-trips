@@ -53,12 +53,6 @@ export function renderChart(data) {
           title: {
             display: true,
             text: 'Number of Pickups'
-          },
-          ticks: {
-            callback: function (value) {
-              // Format ticks for readability
-              return value.toLocaleString();
-            }
           }
         },
         y2: {
@@ -68,15 +62,6 @@ export function renderChart(data) {
             display: true,
             text: 'Total Amount'
           },
-          grid: {
-            drawOnChartArea: false,
-          },
-          ticks: {
-            callback: function (value) {
-              // Format ticks for readability
-              return `$${value.toLocaleString()}`;
-            }
-          }
         }
       }
     }
