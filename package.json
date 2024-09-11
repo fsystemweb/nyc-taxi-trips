@@ -2,7 +2,6 @@
   "name": "nyc-taxi-trips",
   "version": "1.0.0",
   "description": "This small project is a dashboard that fetches trip data from an API and visualizes it using a chart. You can filter the data by `vendorid` and the filter state is saved in the URL (deep linking).",
-  "main": "index.js",
   "scripts": {
     "start": "parcel src/index.html",
     "build": "parcel build src/index.html",

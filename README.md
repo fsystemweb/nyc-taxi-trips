@@ -30,7 +30,7 @@ This is a vanilla JavaScript application
    ```sh
    npm install
 
-3. **Create a .env file in the root directory and add your environment variables:**:
+3. **Create a .env file in the root directory and add your environment variables**:
    ```env
    API_URL=your_api_url_here
    TOKEN=your_token
@@ -42,3 +42,8 @@ This is a vanilla JavaScript application
 5. **Run test**:
    ```sh
    npm test
+
+## Production
+This app is deployed with Surge. You can view the live version of the app at the following link:
+
+[Live Demo](https://solid-building.surge.sh/?vendor=all&hour=all)
