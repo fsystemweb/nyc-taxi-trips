@@ -1,37 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dashboard</title>
-  <link rel="icon" type="image/png" href="/favicon.ico">
-  <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NYC Taxi Trips</title>
+    <link rel="icon" type="image/png" href="/favicon.ico">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <h1>NYC Taxi Trips</h1>
-  <span class="info">The dataset corresponds to NYC taxi trips during January 2017</span>
-  <div class="filter">
-    <label for="vendor-filter">Filter by Vendor ID:</label>
-    <select id="vendor-filter">
-      <option value="all">All Vendors</option>
-      <option value="1">Creative Mobile Technologies, LLC</option>
-      <option value="2">VeriFone Inc.</option>
-    </select>
+    <h1 class="title">NYC Taxi Trips</h1>
+    <span class="info-clarification">The dataset corresponds to NYC taxi trips during January 2017</span>
 
-    <div class="slider-container">
-      <label for="hour-slider" class="slider-label">Hour: <span id="hour-value">0</span>:00</label>
-      <input type="range" id="hour-slider" min="0" max="23" value="0" step="1" value="null">
+    <div class="main-content">
+        <div class="chart-container">
+            <canvas id="taxiChart"></canvas>
+        </div>
 
-      <label for="all-hours">
-        <input type="checkbox" id="all-hours"> All Hours
-      </label>
+        <div class="filter">
+            <div class="vendor-filter">
+                <label for="vendor-filter">Filter by Vendor ID:</label>
+                <select id="vendor-filter">
+                    <option value="all">All Vendors</option>
+                    <option value="1">Creative Mobile Technologies, LLC</option>
+                    <option value="2">VeriFone Inc.</option>
+                </select>
+            </div>
+
+            <div class="slider-container">
+                <label for="hour-slider" class="slider-label">Hour: <span id="hour-value">0</span>:00</label>
+                <input type="range" id="hour-slider" min="0" max="23" value="0" step="1" value="null">
+
+                <label for="all-hours">
+                    <input type="checkbox" id="all-hours"> All Hours
+                </label>
+            </div>
+
+            <div class="message-spoiler">
+              <strong>
+                *Tired of getting stuck in traffic? Our app found the worst time to catch a cab in NYC. Spoiler alert: it's 6 PM!
+              </strong>
+            </div>
+
+        </div>
     </div>
-  </div>
-  <div class="chart-container">
-    <canvas id="taxiChart"></canvas>
-  </div>
 
-
-  <script type="module" src="./scripts/main.js"></script>
+    <script type="module" src="./scripts/main.js"></script>
 </body>
 </html>

@@ -1,39 +1,100 @@
+/* General Styles */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
+  font-family: 'Roboto', sans-serif; /* Use a modern font like Roboto */
   margin: 0;
   padding: 20px;
+  background-color: #f5f5f5;
 }
 
 h1 {
   text-align: center;
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.info-clarification {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
 }
 
 .filter {
-  margin-bottom: 20px;
-  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  font-size: 14px;
+}
+
+.vendor-filter {
+  padding: 20px;
 }
 
 .slider-container {
-  margin: 10px 0;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .slider-label {
-  display: block;
-  margin-bottom: 5px;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.message-spoiler{
+  padding: 20px;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  width: 200px;
+  height: 5px;
+  background: #d3d3d3;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #4CAF50;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+input[type="range"]:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
 }
 
 .chart-container {
-  width: 80%;
-  margin: auto;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+  padding: 20px;
 }
 
-canvas {
-  max-width: 100%;
-  height: auto;
-}
-.info{
-  text-align: center;
-  display: block;
-  padding: 8px;
+
+.main-content {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  gap: 20px;
 }
