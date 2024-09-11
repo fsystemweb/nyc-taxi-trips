@@ -1,7 +1,8 @@
 # NYC Taxi Trips
 Introducing a Vanilla JavaScript Application for NYC Taxi Trip Analysis
 Explore the intricacies of New York City taxi trips during January 2017 with this interactive application. By manipulating the data, you can uncover valuable insights, like:
--When is the worst time of day to take a taxi?
+
+- When is the worst time of day to take a taxi?
 
 ## Libraries Used
 
