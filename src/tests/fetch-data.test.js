@@ -1,6 +1,5 @@
 import { fetchData } from '../scripts/fetch-data';
 
-
 global.fetch = jest.fn(() =>
   Promise.resolve({
     json: () =>
@@ -14,6 +13,7 @@ global.fetch = jest.fn(() =>
 
 describe('fetchData', () => {
   it('should fetch data and return the expected results', async () => {
+
     const data = await fetchData();
     expect(data).toEqual([
       { hour: 12, vendorid: 1, num_pickups: 100, total_amount: 500 },
